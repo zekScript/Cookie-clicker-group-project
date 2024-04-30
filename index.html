@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cookie clicker</title>
+</head>
+<body>
+    <section class="block-of-code">
+    <section>
+    <!-- First cookie container -->
+    <div class="left-container">
+        <div class="divider"></div>
+        <button id="bakeryName"  onclick="changeNameBakery()">Water Potato's bakery</button><br>
+        <p id="cookieCounter">0 cookies</p>
+        <p id="cookieMathPerSecond">Per second: 0</p>
+        <!-- Cookie here idk ill use image for simplicity -->
+        <button id="mainCookieClicker">CookieHere</button>
+    </div>
+    <!-- left wood wall here -->
+    </section>
+<section>
+    <!-- Second cookie Container -->
+<div class="middle-container">
+    <div class="first-small-container">
+    <button id="optionsBtn">Options</button>
+    <button id="statsBtn">Stats</button>
+    </div>
+    <div class="second-small-container">
+    <p id="randomNewsGenerator">News here</p>
+    <button id="infoBtn">Info</button>
+    <button id="legacyBtn">Legacy</button>
+    </div>
+    <!-- progress bar here -->
+<!-- Upgrades go down here if bought! -->
+</div>
+</section>
+<div class="divider"></div>
+<section >
+    
+    <div class="container-right"> 
+    <!-- Shop here -->
+    <p class="store-center">Store</p>
+    <hr>
+    <p class="store-center">Upgrades</p>
+    <!-- Extra upgrades here -->
+    <hr>
+<!-- Buildings down -->
+<div class="divider"></div>
+
+<input checked type="radio" name="oneSelect" id="buyBuildings">Buy<br>
+<input type="radio" name="oneSelect" id="sellBuilldings">Sell
+
+<input checked type="radio" name="preventSameSelection" id="times1Btn">1
+<input type="radio" name="preventSameSelection" id="times10Btn">10
+<input type="radio" name="preventSameSelection" id="times100Btn">100
+<div class="divider"></div>
+<!-- Buildings here all -->
+<div class="align-buildings-right">
+<button type="button" class="width-of-btn" onclick="buyCursor()">Cursor<p id="cursorPrice">15 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyGrandma()">Grandma<p id="grandmaPrice">100 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyFarm()">Farm<p id="farmPrice">1,100 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyMine()">Mine<p id="minePrice">12,000 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyFactory()">Factory<p id="factoryPrice">130,000 cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyBank()">Bank<p id="bankPrice">1,4 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyTemple()">Temple<p id="templePrice">20 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyWizardTower()">Wizard Tower<p id="wizardTowerPrice">330 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyShipment()">Shipment<p id="shipmentPrice">5,1 Billion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyAlchemy()">Alchemy Lab<p id="alchemyLabPrice"> 75 Billion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyPortal()">Portal<p id="portalPrice">1 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyTime()">Time Machine<p id="timeMachinePrice">14 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyAntimatter()">AntiMatter Condensor<p id="antiMatterCondensorPrice">170 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyprism()">Prism<p id="prismPrice">2,1 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyChancemaker()">Chancemaker<p id="chanceMakerPrice">26 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyFractialEngine()">Fractial Engine<p id="fractialEnginePrice">310 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyJavascript()">Javascript Console<p id="javascriptPrice">71 Quintillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyIdle()">Idleverse<p id="idleversePrice">12 Sextillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyCortex()">Cortex Baker<p id="cortexBakerPrice">19 Septillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+<button type="button" class="width-of-btn"  onclick="buyYou()">You<p id="youPrice">540 Septillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+</div>
+</div>
+</section>
+</section>
+    <script src="index.js"></script>
+</body>
+</html>
