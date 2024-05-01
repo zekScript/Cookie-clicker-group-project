@@ -80,8 +80,10 @@ input[type="submit"]{
 }
 
 
-button{
+button[type="button"]{
     width: 60px;
+    background: transparent;
+    border: none;
 }
 
 .divider{
@@ -144,10 +146,6 @@ a{
     text-decoration: none;
 }
 
-#closeOutOfWindow{
-    display: flex;
-    justify-content: flex-end;
-}
 
 h3{
     display: flex;
@@ -171,4 +169,14 @@ h3{
     flex-direction: column;
     max-height: 450px;
     flex-grow: 3;
+    display: none;
+}
+
+.move-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ol {
+    list-style-type:none;
 }

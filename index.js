@@ -45,6 +45,10 @@ const buyBuildings = document.getElementById("buyBuildings");
 const sellBuilldings = document.getElementById("sellBuilldings");
 const mainCookieClicker = document.getElementById("mainCookieClicker");
 const randomNewsGenerator = document.getElementById("randomNewsGenerator");
+const closeOutOfWindow = document.getElementById("closeOutOfWindow");
+// Button options
+const infoReveal = document.getElementById("infoReveal");
+const infoBtn = document.getElementById("infoBtn");
 // STATS HERE
 const maidensMade = document.getElementById("maidensMade");
 const maidensHiredThisAscension = document.getElementById("maidensHiredThisAscension");
@@ -294,4 +298,10 @@ function cookiesMadePerSecond(){
     }, 1000)
 }
 
+closeOutOfWindow.addEventListener("click", () => {
+    infoReveal.style.display = "none";
+})
 
+infoBtn.addEventListener("click", () => {
+    infoReveal.style.display = "block";
+})
