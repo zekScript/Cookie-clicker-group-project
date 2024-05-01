@@ -191,16 +191,16 @@ const buildings = {
 
 //Defaullt bakery names
 const defaultBakeryNames = [
-    "Grandma's",
-    "Cookie Crumble",
-    "Sugar Rush",
-    "Sweet Tooth ",
-    "The Cookie Jar",
-    "Dough Delights",
-    "Heavenly Sweets",
-    "Yummy ",
-    "Frosting Fantasy",
-    "Sweet Sensations"
+    "Gwynevere the Cookie Keeper",
+    "Estus Embersmith",
+    "Nito's Nibbler",
+    "Seath's Sugar Sorceress",
+    "Gravelord Glaze",
+    "Artorias the Baker",
+    "Manus the Muffin Maker",
+    "Quelaag's Crumb Carrier",
+    "Ornstein's Oven Master",
+    "Sif's Snack Sentinel"
 ];
 // Random news generator here
 const darkSoulsNews = [
@@ -245,19 +245,17 @@ const darkSoulsNews = [
 
 // random news generator
 
+
+window.addEventListener("load", () => {
+    const randomNews = Math.floor(Math.random() * darkSoulsNews.length);
+    randomNewsGenerator.textContent = darkSoulsNews[randomNews];
+})
+
 setInterval(() => {
     const randomNews = Math.floor(Math.random() * darkSoulsNews.length);
     randomNewsGenerator.textContent = darkSoulsNews[randomNews];
-}, 8000)
+}, 10000)
 
-window.onload = () => {
-    const randomNews = Math.floor(Math.random() * darkSoulsNews.length);
-    randomNewsGenerator.textContent = darkSoulsNews[randomNews];
-}
-
-// EXAMPLE
-// const element = document.querySelector('.demo');
-// element.style.backgroundColor = 'red';
 
 mainCookieClicker.onclick = cookiesMadePerSecond;
 
@@ -273,6 +271,10 @@ function changeNameBakery(){
     }
 }
 
+window.addEventListener("load", () => {
+    const randomNameGenerator = Math.floor(Math.random() * defaultBakeryNames.length);
+    bakeryName.textContent = `${defaultBakeryNames[randomNameGenerator]}${defaultEndBakeryName}`;
+})
 
 
 // Main cookie clicker
