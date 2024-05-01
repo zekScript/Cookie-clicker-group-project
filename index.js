@@ -68,6 +68,9 @@ let times1 = 1;
 let times10 = 10;
 let times100 = 100;
 let countStats = 0;
+// booleans
+
+isPressedBtn = false;
 const buildings = {
     cursor: {
         name: "Cursor",
@@ -303,5 +306,14 @@ closeOutOfWindow.addEventListener("click", () => {
 })
 
 infoBtn.addEventListener("click", () => {
-    infoReveal.style.display = "block";
+    // infoReveal.style.display = "block";
+    if (!isPressedBtn){
+        infoReveal.style.display = "block";
+        isPressedBtn = true;
+    }
+    else{
+
+        infoReveal.style.display = "none";
+        isPressedBtn = false;
+    }
 })
