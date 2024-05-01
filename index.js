@@ -204,47 +204,46 @@ const defaultBakeryNames = [
 ];
 // Random news generator here
 const darkSoulsNews = [
-    "Dark Souls III: The Ringed City DLC released, concluding the Dark Souls trilogy in 2017.",
-    "Hidetaka Miyazaki hinted at future projects, sparking speculation among Dark Souls fans.",
-    "The Dark Souls community organized tournaments and events, showcasing PvP skills and strategies.",
-    "A remastered version of the original Dark Souls game was announced, featuring improved graphics and performance.",
-    "Fans eagerly awaited news on Elden Ring, the upcoming collaboration between FromSoftware and George R.R. Martin.",
-    "Dark Souls speedrunning community continued to break records and discover new glitches and skips.",
-    "FromSoftware released Sekiro: Shadows Die Twice in 2019, praised for its challenging gameplay and unique setting.",
-    "Dark Souls fan art and lore discussions thrived on social media platforms and forums.",
-    "Players delved into the intricate lore of the Dark Souls universe, uncovering hidden stories and connections.",
-    "The difficulty of Dark Souls games remained a topic of debate, with some praising the challenge and others seeking accessibility options.",
-    "Dark Souls-inspired games, such as Salt and Sanctuary and Hollow Knight, gained popularity among fans of the genre.",
-    "FromSoftware teased cryptic hints and trailers for upcoming projects, fueling speculation and anticipation.",
-    "Dark Souls merchandise, including figures and apparel, became sought-after collectibles for fans.",
-    "The Dark Souls community organized charity events and fundraisers, showcasing the positive impact of gaming communities.",
-    "Players created custom challenge runs and mods to add new layers of difficulty and complexity to Dark Souls games.",
-    "FromSoftware's signature level design and atmosphere continued to be praised by critics and players alike.",
-    "Dark Souls speedrunning became a staple of gaming marathons and online streaming events, attracting large audiences.",
-    "Fans eagerly awaited news on potential sequels or spiritual successors to the Dark Souls series.",
-    "FromSoftware's influence on the gaming industry continued to be felt, inspiring developers and shaping the action RPG genre.",
-    "Dark Souls' interconnected world and branching paths provided ample opportunities for exploration and discovery.",
-    "Players shared their most memorable moments and epic battles in Dark Souls through screenshots and videos.",
-    "FromSoftware maintained a reputation for delivering challenging and rewarding gameplay experiences, earning the admiration of fans worldwide.",
-    "Dark Souls community collaborated on wikis and guides, sharing knowledge and strategies to help fellow players.",
-    "Players engaged in jolly cooperation and invaded each other's worlds, adding a dynamic multiplayer aspect to the Dark Souls experience.",
-    "FromSoftware's dedication to crafting immersive worlds and deep narratives continued to captivate players, ensuring the legacy of Dark Souls.",
-    "Dark Souls-themed events and gatherings were held at gaming conventions, bringing fans together to celebrate their love for the series.",
-    "The Dark Souls community created fan-made challenges and competitions, testing the limits of players' skill and perseverance.",
-    "FromSoftware released Dark Souls Trilogy Box Set, containing all three Dark Souls games and their respective DLCs, to celebrate the series' legacy.",
-    "Players discovered hidden secrets and easter eggs in Dark Souls games, fueling speculation and lore discussions within the community.",
-    "FromSoftware announced the development of a new IP, sparking excitement and curiosity among Dark Souls fans about the studio's next project.",
-    "The Dark Souls subreddit reached a milestone of one million subscribers, highlighting the enduring popularity of the series.",
-    "Players organized online tournaments and leagues, showcasing their mastery of PvP combat in the Dark Souls games.",
-    "FromSoftware released updates and patches to address balancing issues and improve the overall experience for Dark Souls players.",
-    "Dark Souls-themed cosplay contests and events were held at gaming conventions, with fans showcasing their favorite characters and costumes.",
-    "Players created and shared custom fan-made levels and challenges using modding tools, expanding the replayability of Dark Souls games.",
-    "FromSoftware announced collaborations with other studios to bring Dark Souls characters and content to other games, sparking crossover events and collaborations.",
-    "The Dark Souls community organized fan conventions and meetups, providing opportunities for fans to connect with each other and share their passion for the series."
+    "News: Dark Souls III: The Ringed City DLC released, concluding the Dark Souls trilogy in 2017.",
+    "News: Hidetaka Miyazaki hinted at future projects, sparking speculation among Dark Souls fans.",
+    "News: The Dark Souls community organized tournaments and events, showcasing PvP skills and strategies.",
+    "News: A remastered version of the original Dark Souls game was announced, featuring improved graphics and performance.",
+    "News: Fans eagerly awaited news on Elden Ring, the upcoming collaboration between FromSoftware and George R.R. Martin.",
+    "News: Dark Souls speedrunning community continued to break records and discover new glitches and skips.",
+    "News: FromSoftware released Sekiro: Shadows Die Twice in 2019, praised for its challenging gameplay and unique setting.",
+    "News: Dark Souls fan art and lore discussions thrived on social media platforms and forums.",
+    "News: Players delved into the intricate lore of the Dark Souls universe, uncovering hidden stories and connections.",
+    "News: The difficulty of Dark Souls games remained a topic of debate, with some praising the challenge and others seeking accessibility options.",
+    "News: Dark Souls-inspired games, such as Salt and Sanctuary and Hollow Knight, gained popularity among fans of the genre.",
+    "News: FromSoftware teased cryptic hints and trailers for upcoming projects, fueling speculation and anticipation.",
+    "News: Dark Souls merchandise, including figures and apparel, became sought-after collectibles for fans.",
+    "News: The Dark Souls community organized charity events and fundraisers, showcasing the positive impact of gaming communities.",
+    "News: Players created custom challenge runs and mods to add new layers of difficulty and complexity to Dark Souls games.",
+    "News: FromSoftware's signature level design and atmosphere continued to be praised by critics and players alike.",
+    "News: Dark Souls speedrunning became a staple of gaming marathons and online streaming events, attracting large audiences.",
+    "News: Fans eagerly awaited news on potential sequels or spiritual successors to the Dark Souls series.",
+    "News: FromSoftware's influence on the gaming industry continued to be felt, inspiring developers and shaping the action RPG genre.",
+    "News: Dark Souls' interconnected world and branching paths provided ample opportunities for exploration and discovery.",
+    "News: Players shared their most memorable moments and epic battles in Dark Souls through screenshots and videos.",
+    "News: FromSoftware maintained a reputation for delivering challenging and rewarding gameplay experiences, earning the admiration of fans worldwide.",
+    "News: Dark Souls community collaborated on wikis and guides, sharing knowledge and strategies to help fellow players.",
+    "News: Players engaged in jolly cooperation and invaded each other's worlds, adding a dynamic multiplayer aspect to the Dark Souls experience.",
+    "News: News: FromSoftware's dedication to crafting immersive worlds and deep narratives continued to captivate players, ensuring the legacy of Dark Souls.",
+    "News: Dark Souls-themed events and gatherings were held at gaming conventions, bringing fans together to celebrate their love for the series.",
+    "News: The Dark Souls community created fan-made challenges and competitions, testing the limits of players' skill and perseverance.",
+    "News: FromSoftware released Dark Souls Trilogy Box Set, containing all three Dark Souls games and their respective DLCs, to celebrate the series' legacy.",
+    "News: Players discovered hidden secrets and easter eggs in Dark Souls games, fueling speculation and lore discussions within the community.",
+    "News: FromSoftware announced the development of a new IP, sparking excitement and curiosity among Dark Souls fans about the studio's next project.",
+    "News: The Dark Souls subreddit reached a milestone of one million subscribers, highlighting the enduring popularity of the series.",
+    "News: Players organized online tournaments and leagues, showcasing their mastery of PvP combat in the Dark Souls games.",
+    "News: FromSoftware released updates and patches to address balancing issues and improve the overall experience for Dark Souls players.",
+    "News: Dark Souls-themed cosplay contests and events were held at gaming conventions, with fans showcasing their favorite characters and costumes.",
+    "News: Players created and shared custom fan-made levels and challenges using modding tools, expanding the replayability of Dark Souls games.",
+    "News: FromSoftware announced collaborations with other studios to bring Dark Souls characters and content to other games, sparking crossover events and collaborations.",
+    "News: The Dark Souls community organized fan conventions and meetups, providing opportunities for fans to connect with each other and share their passion for the series."
 ];
 
 // random news generator
-
 
 window.addEventListener("load", () => {
     const randomNews = Math.floor(Math.random() * darkSoulsNews.length);
@@ -266,6 +265,9 @@ function changeNameBakery(){
         const randomDefaultNameGenerator = Math.floor(Math.random() * defaultBakeryNames.length);
         bakeryName.textContent = `${defaultBakeryNames[randomDefaultNameGenerator]}${defaultEndBakeryName}`;
     }
+    else if(changeName === null){
+        return bakeryName;
+    }
     else{
         bakeryName.textContent = `${changeName}${defaultEndBakeryName}`;
     }
@@ -281,427 +283,15 @@ window.addEventListener("load", () => {
 
 function cookiesMadePerSecond(){
     if(cookiesMade == 1){
-        cookieCounter.textContent = `${cookiesMade} Maiden`
+        cookieCounter.textContent = `${cookiesMade} Maiden`;
     }
     cookiesMade++;
     cookieCounter.textContent = `${cookiesMade} Maidens`;
-}
+    // STATS FROM THE RIGHT CODE HERE
 
-// formula price = base Cost * 1.15 ** M - F (m = buildings owned) (f = type of buildings got for free)
-// DONT DELETE THIS CODE AT ALL COST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// there is a bug
-function buyCursor(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.cursor.cost * 1.15 ** buildings.cursor.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.cursor.count++;
-        price = buildings.cursor.cost * 1.15 ** buildings.cursor.count;
-        price = Math.ceil(price);
-        console.log(buildings.cursor.count); // This is good code
-        console.log(price); // this is a good output
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.cursor.count;
-        function baseCps(){
-            cookiesMade += buildings.cursor.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
+    setTimeout(() => {
+        maidensMade.innerText = `Maidens Bank: ${cookiesMade}`;
+    }, 1000)
 }
-
-else{
-    alert(`You do not have enough cookies Right now! You have ${cookiesMade} cookies currently.`);
-}
-}
-
-console.log(price);
-
-function buyGrandma(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.grandma.cost * 1.15 ** buildings.grandma.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.grandma.count++;
-        price = buildings.grandma.cost * 1.15 ** buildings.grandma.count;
-        price = Math.ceil(price);
-        grandmaPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.grandma.count;
-        
-        
-        
-        
-        
-        
-        function baseCps(){
-            cookiesMade += buildings.grandma.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyFarm(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.farm.cost * 1.15 ** buildings.farm.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.farm.count++;
-        price = buildings.farm.cost * 1.15 ** buildings.farm.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.farm.count;
-
-
-
-
-
-
-
-        function baseCps(){
-            cookiesMade += buildings.farm.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyMine(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.mine.cost * 1.15 ** buildings.mine.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.mine.count++;
-        price = buildings.mine.cost * 1.15 ** buildings.mine.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        
-        inTotal.textContent = buildings.mine.count;
-
-
-
-        function baseCps(){
-            cookiesMade += buildings.mine.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyFactory(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.factory.cost * 1.15 ** buildings.factory.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.factory.count++;
-        price = buildings.cursor.cost * 1.15 ** buildings.cursor.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.factory.count;
-        function baseCps(){
-            cookiesMade += buildings.factory.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyBank(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.bank.cost * 1.15 ** buildings.bank.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.bank.count++;
-        price = buildings.bank.cost * 1.15 ** buildings.bank.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        
-        inTotal.textContent = buildings.bank.count;
-        function baseCps(){
-            cookiesMade += buildings.bank.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyTemple(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.temple.cost * 1.15 ** buildings.temple.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.temple.count++;
-        price = buildings.temple.cost * 1.15 ** buildings.temple.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.temple.count;
-        function baseCps(){
-            cookiesMade += buildings.temple.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyWizardTower(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.wizardTower.cost * 1.15 ** buildings.wizardTower.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.wizardTower.count++;
-        price = buildings.wizardTower.cost * 1.15 ** buildings.wizardTower.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        
-        inTotal.textContent = buildings.wizardTower.count;
-        function baseCps(){
-            cookiesMade += buildings.wizardTower.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyShipment(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.shipment.cost * 1.15 ** buildings.shipment.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.shipment.count++;
-        price = buildings.shipment.cost * 1.15 ** buildings.shipment.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.shipment.count;
-        function baseCps(){
-            cookiesMade += buildings.shipment.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyAlchemyLab(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.alchemyLab.cost * 1.15 ** buildings.alchemyLab.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.alchemyLab.count++;
-        price = buildings.alchemyLab.cost * 1.15 ** buildings.alchemyLab.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.alchemyLab.count;
-        function baseCps(){
-            cookiesMade += buildings.alchemyLab.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyPortal(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.portal.cost * 1.15 ** buildings.portal.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.portal.count++;
-        price = buildings.portal.cost * 1.15 ** buildings.portal.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.alchemyLab.count;
-        function baseCps(){
-            cookiesMade += buildings.portal.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyTimeMachine(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.timeMachine.cost * 1.15 ** buildings.timeMachine.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.timeMachine.count++;
-        price = buildings.portal.cost * 1.15 ** buildings.portal.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.timeMachine.count;
-        function baseCps(){
-            cookiesMade += buildings.timeMachine.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyAntimatterCondensor(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.antimatterCondenser.cost * 1.15 ** buildings.antimatterCondenser.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.antimatterCondenser.count++;
-        price = buildings.antimatterCondenser.cost * 1.15 ** buildings.antimatterCondenser.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        
-        inTotal.textContent = buildings.antimatterCondenser.count;
-        function baseCps(){
-            cookiesMade += buildings.antimatterCondenser.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyPrism(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.prism.cost * 1.15 ** buildings.prism.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.prism.count++;
-        price = buildings.prism.cost * 1.15 ** buildings.prism.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        
-        inTotal.textContent = buildings.prism.count;
-        function baseCps(){
-            cookiesMade += buildings.prism.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyChanceMaker(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.chancemaker.cost * 1.15 ** buildings.chancemaker.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.chancemaker.count++;
-        price = buildings.chancemaker.cost * 1.15 ** buildings.chancemaker.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.chancemaker.count;
-        function baseCps(){
-            cookiesMade += buildings.chancemaker.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyFractialEngine(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.fractalEngine.cost * 1.15 ** buildings.fractalEngine.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.fractalEngine.count++;
-        price = buildings.fractalEngine.cost * 1.15 ** buildings.fractalEngine.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.fractalEngine.count;
-        function baseCps(){
-            cookiesMade += buildings.fractalEngine.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyJavascript(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.javascriptConsole.cost * 1.15 ** buildings.javascriptConsole.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.javascriptConsole.count++;
-        price = buildings.javascriptConsole.cost * 1.15 ** buildings.cursor.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.javascriptConsole.count;
-        function baseCps(){
-            cookiesMade += buildings.javascriptConsole.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyIdleverse(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.idleverse.cost * 1.15 ** buildings.idleverse.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.idleverse.count++;
-        price = buildings.idleverse.cost * 1.15 ** buildings.idleverse.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.idleverse.count;
-        function baseCps(){
-            cookiesMade += buildings.idleverse.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyCortexBaker(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.cortexBaker.cost * 1.15 ** buildings.cortexBaker.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.cortexBaker.count++;
-        price = buildings.cortexBaker.cost * 1.15 ** buildings.cortexBaker.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.cortexBaker.count;
-        function baseCps(){
-            cookiesMade += buildings.cortexBaker.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-function buyYou(){
-    if(cookiesMade >= price && times1Btn.checked && buyBuildings.checked){ 
-
-        price = buildings.you.cost * 1.15 ** buildings.you.count;
-        price = Math.ceil(price);
-        cookiesMade -= price;
-        buildings.you.count++;
-        price = buildings.you.cost * 1.15 ** buildings.you.count;
-        price = Math.ceil(price);
-        cursorPrice.textContent = `${price} cookies`
-        inTotal.textContent = buildings.you.count;
-        function baseCps(){
-            cookiesMade += buildings.you.baseCps;
-            cookiesMade = Math.round(cookiesMade * 10) / 10;
-            cookieCounter.textContent = `${cookiesMade} cookies`;
-        }
-        setInterval(baseCps, 1000);
-}
-}
-
-
-// DEAD END OF BUILDINGS!!!!        DEAD END OF BUILDINGS!!!!           DEAD END OF BUILDINGS!!!!    
 
 

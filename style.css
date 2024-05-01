@@ -132,3 +132,43 @@ ul{
     align-items: center;
 }
 
+hr{
+    border-bottom: 2px hsl(0, 0%, 25%);
+}
+
+.info-hr{
+    width: 125px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#closeOutOfWindow{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+
+.center-container{
+    height: 100%;
+}
+
+.margin-from-left{
+    margin-left: 10px;
+}
+
+.info{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    flex-grow: 3;
+}
