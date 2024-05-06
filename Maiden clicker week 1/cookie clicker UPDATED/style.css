@@ -1,0 +1,142 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+.left-container{
+    border-right: 2px solid black;
+    height: 100%;
+
+}
+
+.column-pos{
+    display: flex;
+    flex-direction: column;
+}
+
+.take-width{
+    width: 100%px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.block-of-code{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-container{
+    display: flex;
+    justify-content: right;
+    max-width: 350px;
+    border: 2px solid black;
+}
+
+#bakeryName, #cookieCounter, #cookieMathPerSecond, .mainCookie{
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+    margin-left: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.align-buildings-right{
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="submit"]{
+    height: 20px;
+    border-radius: 50px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+#mainCookieClicker{
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 2.5rem;
+}
+
+
+button{
+    width: 60px;
+}
+
+.divider{
+    padding-bottom: 30px;
+}
+
+.width-of-btn{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    border: solid 2px black;
+}
+
+.store-center{
+    text-align: center;
+}
+
+.stats-container{
+    border-left: 2px black solid;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15rem;
+    overflow-y: auto;
+}
+/*nav will need to be discused about because of logo issues*/
+nav{
+    background-color: rgb(36, 33, 33);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+}
+/*Nav colors updated*/
+nav li{
+    color: #fff;
+    text-decoration: none;
+}
+/*logo*/
+nav img{
+    width: 20%;
+}
+
