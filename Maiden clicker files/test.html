@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Clicker Game</title>
+</head>
+<body>
+    <button id="cookieButton">Click Me!</button>
+    <p id="clickCount">Clicks: 0</p>
+
+    <script>
+        // Maximum number of clicks allowed
+        const maxClicks = 10;
+        // Delay between each click in milliseconds
+        const clickDelay = 1000; // 1 second
+
+        let clickCount = 0;
+        let canClick = true;
+
+        // Function to handle button click
+        function handleClick() {
+            if (canClick && clickCount < maxClicks) {
+                clickCount++;
+                document.getElementById('clickCount').textContent = 'Clicks: ' + clickCount;
+                canClick = false; // Disable clicking temporarily
+                setTimeout(function() {
+                    canClick = true; // Re-enable clicking after the delay
+                }, clickDelay);
+            }
+        }
+
+        // Add click event listener to the button
+        document.getElementById('cookieButton').addEventListener('click', handleClick);
+    </script>
+</body>
+</html>
