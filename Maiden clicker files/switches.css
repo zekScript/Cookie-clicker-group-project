@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+/*will need Kalpoko help for this*/
+body{
+    background-image: url(/Images/upgrade\ station\ background.jpgq);
+}
+nav{
+    background-color: rgb(36, 33, 33);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+}
+
+/*Nav colors updated*/
+nav li{
+    color: #fff;
+    text-decoration: none;
+}
+/*logo*/
+nav img{
+    width: 20%;
+}
+/*Switch types*/
+.upgrade-types{
+    display: flex;
+    justify-content: center;
+}
+.upgrade-types h1{
+  color: black;
+}
+/*Switch cards*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+#cookieCounterMain{
+    display: flex;
+    margin-left: 2px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card img{
+    width: 70%;
+    height: 70%;
+}
+.card h3 {
+    margin-top: 0;
+}
+.card p {
+    margin-bottom: 15px;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    border: none;
+}
+
+/* PHONE AND TABLET COMPATIBLE */
+/* orientation: portrait is when a phone is placed vertically */
+/* orientation: landscape is when a phone is placed Horizontally */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    /* Styles for phones in portrait orientation */
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in landscape orientation */
+  }
+  

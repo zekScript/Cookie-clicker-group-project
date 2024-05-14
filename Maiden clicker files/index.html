@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Maiden Clicker</title>
+</head>
+<body>
+    <!-- !!!!!IF YOU SEE ID ATTRIBUTE DONT DELETE THEM!!!! -->
+    <nav>
+        <div class="logo">
+        <img src="/Images/logo.jpg" alt="Fromsoftware" class="logo"></div>
+        <ul>
+            <!-- THERE SHOULD BE BUILDINGS PAGE  -->
+            <a href="index.html"><li>Maiden Clicker</li></a>
+            <a href="upgrade.html"><li>Upgrade Station</li></a>
+           <a href="switches.html"><li>Switches</li></a>
+            <a href="buildings.html"><li>Buildings</li></a>
+            <!-- Discord, steam, twitter whatever down here but for now ill give just text but should be icons -->
+           <a href="#"><li>Discord</li></a>
+           <a href="#"><li>Twitter</li></a>
+           <a href="#"><li>Steam</li></a>
+           <li id="cookieCounterMain">0 Maidens</li>
+        </ul>
+    </nav>
+    <section class="block-of-code">
+        <section>
+        <!-- First cookie container -->
+        <div class="left-container">
+            <div class="divider"></div>
+            <button id="bakeryName"  onclick="changeNameBakery()"></button><br>
+            <p id="cookieCounter">0 Maidens</p>
+            <p id="cookieMathPerSecond">Per second: 0 Maidens</p>
+            <!-- MAIN CLICKER HERE  -->
+            <button id="mainCookieClicker">maidenClickerHere</button>
+        </div>
+        <!-- left wall (FOR DESIGN) -->
+        </section>
+    <section>
+        <!-- Second cookie Container -->
+    <div class="middle-container">
+        <div class="column-pos">
+        <button id="optionsBtn">Options</button>
+        <button id="updateNotesBtn">Update Notes</button>
+        </div>
+        <p id="randomNewsGenerator" class="take-width"></p>
+    
+        <div class="column-pos">
+        <button id="infoBtn">Info</button>
+        <button id="legacyBtn">Legacy</button>
+        </div>
+        <!-- progress bar here -->
+    <!-- Upgrades go down here if bought! -->
+    </div>
+        <!-- WHEN BOUGHT BUILDINGS || CLICKED ON OPTIONS || UPDATE NOTES || INFO || LEGACY MAKE A DISPLAY HERE-->
+        <div class="center-container">
+            <section>
+<!--  Change display: none to display: block to see it perma      -->
+            <div id="optionsWindow" style="display: none">
+                <button id="closeOutOfWindowOption" style="background: transparent;  color: black; border: none; float:right;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg></button>
+                <div class="mainOptionWindow">
+                    <!-- I really love the 2 borders standing i think we can keep it (<hr>) -->
+                    <div style="display: flex; justify-content: center;">
+                    <hr>
+                    <h1>Options</h1>
+                    <hr>
+                    </div>
+                    <p style="padding-top: 25px; border-top: 0.5px solid hsl(0, 0%, 78%); border-bottom: 0.5px solid hsl(0, 0%, 78%); width: 150px; padding-left: 15px;">General</p>
+                    <div class="languageStyle">
+                    <p>Language:<span id="LanguageSelected"> English</span></p><button id="languageSelection">Change language</button>
+                    </div>
+                    <div class="saveStyle">
+                    <button style="text-align: end; width: 150px; height: 25px;">Save</button><p>Save manually (The game saves automatically every 60 seconds, shortcut: ctrl + s)</p>
+                    </div>
+                    <div class="importAndExportSaveStyle">
+                        <div style="border-bottom: 0.5px solid hsl(0, 0%, 78%); display: flex; flex-direction: row;">
+                        <button style="width: 250px; height: 35px; text-align: end;">Export save</button><button style="width: 250px; height: 35px; text-align: end;">Import save</button><p style="font-size: 12px; width: 100%; text-align:end; margin-right: 25px;">You can use this to backup your save or to transfer it to another computer (shortcut for import: ctrl + o)</p>
+                        </div>
+                    </div>
+                
+                <div style="padding-top: 25px; display: flex; border-bottom: 0.5px solid hsl(0, 0%, 78%);">
+                <button style="width: 150px; height: 35px; text-align: end;">Save to file</button><button style="width: 150px; height: 35px; text-align: end;">Load to file</button><p style="font-size: 12px; padding-left: 10px;">Use this to keep backups on your computer</p>
+                </div>
+                <div style="display: flex; justify-content: flex-end; text-align: center; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-top: 25px; border-top: 0.5px solid hsl(0, 0%, 78%)">
+                    <p style="font-size: 12px; padding-right: 10px">Delete all your progress, including your achievment</p><button style="text-align: end; width: 150px; height: 35px; margin-right: 20px;" >Wipe save</button>
+                </div>
+                <div class="settingsWindow">
+                    <p style="padding-top: 25px; border-top: 0.5px solid hsl(0, 0%, 78%); border-bottom: 0.5px solid hsl(0, 0%, 78%); width: 150px; padding-left: 15px;">Settings</p>
+                    <!-- <div class="volumeContainer">
+
+                    </div> -->
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">Fancy graphics: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(Visual improvments; disabling may improve performance)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">CSS Filters: on</button><p style="font-size: 11px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(Cutting edge visual improvments; disabling may improve performance)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">Particles: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(Maidens falling down, etc.; disabling may improve performance)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">Numbers: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(numbers that pop-up when clicking the maiden)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">wobbly maiden: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(your maiden will react when you click it)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">maiden sound: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(maiden sound when you click it)</p>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                        <button class="options">short numbers: on</button><p style="font-size: 12px; border-bottom: 0.5px solid hsl(0, 0%, 78%); padding-left: 20px;">(shorten big numbers)</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </section>
+            <!-- Legacy window -->
+            <!-- Change display: block to design the window -->
+            <div id="mainLegacyWindow" style="display: none;">
+            <div class="behindLegacyWindow" style=" width: 300px; height: 300px; z-index: 1"><button onclick="closeTheLegacy()" style="background: transparent; color: white; border: none; width: 25px; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg></button>
+            <div id="legacyWindow">
+                <div class="legacyInfo">
+                    <h1 style="color: white;">Ascend</h1>
+                    <p >Do you REALLY want to ascend</p>
+                    <p >You will lose your progress and start over from scratch</p>
+                    <p >All your cookies will be converted into prestige and heavenly chips</p>
+                    <p >You Will keep your achievments, building levels and sugar lumps.</p>
+                </div>
+                <button id="cancelBtnLegacy">Cancel</button>
+                </div>
+            </div>
+        </div>
+            <!-- Info is functional just need some design (DONT CHANGE ID NOR CLASS, BUT U CAN CHANGE CSS IF NEEDED) -->
+            <div class="info" id="infoReveal">
+                <div class="move-button">
+                    <button id="closeOutOfWindow" style="background: transparent;  color: black; border: none; float:right;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg></button>
+                  </div>
+                  <hr class="info-hr">
+                <h3 >Info</h3>
+                  <hr class="info-hr">
+                  <div class="margin-from-left">
+                  <p style="font-size: 1.5rem;">About</p>
+                  <p>Maiden Clicker is an inspired cookie clicker Game made by Armandas & Julius</p>
+                  <p>Maiden Clicker is made with HTML5 & CSS3 & JavaScript</p>
+                  <p>Right now we don't have any social media to give, because it's a KITM project requested by Mokytojas Mantas Kalpokas.</p>
+                  <!-- Add a paypal logo here or smthg -->
+                  <p>Buy us Coffee!</p>
+                  <p style="color: red;">Note: if you find a new bug after an update and you're using a 3rd-party add-on, make sure it's not just your add-on causing it!</p>
+                  <p style="color: red;">Warning: clearing your browser cache or cookies (what else?) will result in your save being wiped. Export your save and back it up first!</p>
+                  <hr>
+                  <h2>Version Updates:</h2>
+                  <hr>
+    
+                  <h2>Version 1.0.1</h2>
+                  <div>
+                  <ol id="version-list">
+                    <li>Made the game</li>
+                    <li>Starting to regret</li>
+                    <li>M.M.Kalpokas Forced us to make a game</li>
+                  </ol>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section>
+    <div class="align-buildings-right">
+        <div class="stats-container">
+            <!-- DONT DELETE ID'S -->
+    <h1>Stats:</h1>
+    <p id="maidensMade">Maidens Bank: 0</p>
+    <p id="maidensHiredThisAscension">maidens made (this ascension): 0</p>
+    <p id="maidensMadeAllTime">Maidens made (All time) : 0</p>
+    <p id="maidensPerSecond">Maidens made per second: 0</p>
+    <p id="runStartAgo">Run started: 0 days ago</p>
+    <p id="goldenMaidenClicks">Golden maidens clicked: 0</p>
+    <p id="maidensPerClick">Maidens clicked: 0</p>
+    <p id="maidenHireClicks">Maidens buildings owned:: 0</p>
+    <p>Version 1.0.1</p>
+    </div>
+    </div>
+    </div>
+    </section>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
