@@ -1,0 +1,331 @@
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+     
+}
+
+button{
+    cursor: pointer;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+.left-container{
+    border-right: 2px solid wheat;
+    height: 100%;
+    background-image: url(/Images/background\ gnagster.gif);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+
+}
+
+.column-pos{
+    display: flex;
+    flex-direction: column;
+}
+.background-for-this{
+    background-color: black;
+    color: #fff;
+}
+
+.take-width{
+    width: 100%px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.block-of-code{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-container{
+    display: flex;
+    justify-content: right;
+    max-width: 350px;
+    border: 2px solid black;
+}
+
+#bakeryName, #cookieCounter, #cookieMathPerSecond, .mainCookie{
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+    margin-left: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#cookieCounterMain{
+    display: flex;
+    margin-left: 2px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+.align-buildings-right{
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="submit"]{
+    height: 20px;
+    border-radius: 50px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+#mainCookieClicker{
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+    background-image: url(/Images/Maiden_in_black.png);
+}
+.position{
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    width: 60px;
+}
+
+.divider{
+    padding-bottom: 30px;
+}
+
+.width-of-btn{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    border: solid 2px black;
+}
+
+.store-center{
+    text-align: center;
+}
+
+.stats-container{
+    border-left: 2px #fff solid;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15rem;
+    overflow-y: auto;
+    background-image: url(/Images/background\ monkey.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+/*nav will need to be discused about because of logo issues*/
+nav{
+    background-color: rgb(36, 33, 33);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 77px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+}
+
+/* Julius: navbar */
+nav li{
+    color: #fff;
+    text-decoration: none;
+}
+/*logo*/
+nav img{
+    width: 20%;
+}
+
+#bakeryName {
+    margin-right: 30px;
+}
+
+
+
+/* Info button stylesheet down here */
+
+.info-hr{
+    width: 125px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+
+.center-container{
+    height: 100%;
+    background-image: url(/Images/background\ middle.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.margin-from-left{
+    margin-left: 10px;
+}
+
+.info{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    flex-grow: 3;
+    display: none;
+}
+
+.move-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ol {
+    list-style-type:none;
+}
+
+
+button[type="button"]{
+    width: 60px;
+    background: transparent;
+    border: none;
+}
+/* Legacy Window */
+#legacyWindow{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 0%, 14%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+
+
+.behindLegacyWindow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 5px;
+    
+}
+
+.legacyInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+/* Options Stylesheet */
+
+#optionsWindow{
+    overflow-y: auto;
+    max-height: 410px;
+}
+svg{
+    background-color: #fff;
+}
+.languageStyle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#languageSelection{
+    width: 150px;
+    margin-left: 15px;
+    height: 25px;
+}
+
+.saveStyle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-bottom: 0.5px solid hsl(0, 0%, 78%);
+}
+
+.importAndExportSaveStyle {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+
+
+
+.optionBtns{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.options{
+    width: 180px;
+    height: 35px;
+    text-align: end;
+    margin-left: 20px;
+}
+
+/* PHONE AND TABLET COMPATIBLE */
+/* orientation: portrait is when a phone is placed vertically */
+/* orientation: landscape is when a phone is placed Horizontally */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    /* Styles for phones in portrait orientation */
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in landscape orientation */
+  }

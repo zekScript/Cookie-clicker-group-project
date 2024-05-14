@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buildings.css">
+    <title>Buildings - Maiden Clicker </title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <img src="/Images/logo.jpg" alt="Fromsoftware" class="logo"></div>
+        <ul>
+            <!-- THERE SHOULD BE BUILDINGS PAGE  -->
+            <a href="index.html"><li>Maiden Clicker</li></a>
+            <a href="upgrade.html"><li>Upgrade Station</li></a>
+           <a href="switches.html"><li>Switches</li></a>
+            <a href="buildings.html"><li>Buildings</li></a>
+            <!-- Discord, steam, twitter whatever down here but for now ill give just text but should be icons -->
+           <a href="https://discord.gg/adrwnJFa" target="_blank"><li>Discord</li></a>
+           <a href="#"><li>Twitter</li></a>
+           <a href="#"><li>Steam</li></a>
+           <li id="cookieCounterMain">0 Maidens</li>
+        </ul>
+    </nav>
+    <!-- Container when user wants to buy it -->
+    <section class="block-of-code">
+   <section>
+<div class="menuContainer">
+    <div class="buildings-menu">
+        <!-- Here my another idea of making button styles, u can try that-->
+    <button style="background-image: url('/Images/1A1A1A.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;" type="button" class="width-of-btn" onclick="openCursorBuyMenu()">Cursor<p id="cursorPrice">15 maidens</p><p id="inTotal"></p></button>
+    <button type="button" class="width-of-btn" onclick="openGrandmaBuyMenu()">Grandma<p id="grandmaPrice">100 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openFarmBuyMenu()">Farm<p id="farmPrice">1,100 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openMineBuyMenu()">Mine<p id="minePrice">12,000 cookies</p><p id="inTotal"></p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openFactoryBuyMenu()">Factory<p id="factoryPrice">130,000 cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openBankBuyMenu()">Bank<p id="bankPrice">1,4 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openTempleBuyMenu()">Temple<p id="templePrice">20 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openWizardTowerBuyMenu()">Wizard Tower<p id="wizardTowerPrice">330 Million cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openShipmentBuyMenu()">Shipment<p id="shipmentPrice">5,1 Billion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openAlchemyLabBuyMenu()">Alchemy Lab<p id="alchemyLabPrice"> 75 Billion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openPortalBuyMenu()">Portal<p id="portalPrice">1 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openTimeMachineBuyMenu()">Time Machine<p id="timeMachinePrice">14 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openantimatterCondenserBuyMenu()">AntiMatter Condensor<p id="antiMatterCondensorPrice">170 Trillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openPrismBuyMenu()">Prism<p id="prismPrice">2,1 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openChanceMakerBuyMenu()">Chancemaker<p id="chanceMakerPrice">26 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openFractialEngineBuyMenu()">Fractial Engine<p id="fractialEnginePrice">310 Quadrillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openjavascriptConsoleBuyMenu()">Javascript Console<p id="javascriptPrice">71 Quintillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openIdleVerseBuyMenu()">Idleverse<p id="idleversePrice">12 Sextillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="opencortexBakerBuyMenu()">Cortex Baker<p id="cortexBakerPrice">19 Septillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    <button type="button" class="width-of-btn"  onclick="openYouBuyMenu()">You<p id="youPrice">540 Septillion cookies</p><p id="timesByBuyingAndSelling"></p></button>
+    </div>
+</div>
+<!-- container for buildings -->
+</section>
+
+<h1 id="introOnStart" style="color: white; font-size: 5rem; font-family: serif;">Select the Buildings you want to buy on the <span style="color: red; text-decoration: double; text-decoration-style: solid; font-family: cursive">left</span> side!</h1>
+
+<!-- Select style="display: none;" to display: flex; if u want to modify it, When youre done change it to none by default  -->
+<!-- As always DO NOT DELETE NOR CHANGE ID'S Just use CSS On it -->
+
+<!-- Cursor -->
+<div class="building-stats-container" style="display: none;">
+    <h3>Cursor</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="grandmaMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- Farm -->
+<div class="building-stats-container" id="farmMenu" style="display: none;">
+    <h3>Farm</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- Mine -->
+<div class="building-stats-container" id="mineMenu" style="display: none;">
+    <h3>Mine</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- Factory -->
+<div class="building-stats-container" id="factoryMenu" style="display: none;">
+    <h3>Factory</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="factoryMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="bankMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="templeMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="wizardTowerMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="shipmentMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="alchemyLabMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="portalMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="timeMachineMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="antimatterCondenserMenu" style="display: none;"> 
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="prismMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="chanceMakerMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="fractialEngineMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="javascriptMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="idleVerseMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="cortexBakerMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+<!-- grandma -->
+<div class="building-stats-container" id="youMenu" style="display: none;">
+    <h3>Grandma</h3>
+    <p>"Autoclicks once every 10 seconds"</p>
+    <div class="divider"></div>
+    <!-- Placeholder -->
+    <img src="https://pbs.twimg.com/media/FDJVv_MXEAI4-G-?format=png&name=4096x4096" width="250"> 
+    <h4>Owned: 0</h4>
+    <p class="p-stats">Cost: 18 maidens</p>
+    <div class="row-buttons">
+    <button type="submit" style="background-color: blueviolet; border: none;" onclick="buyCursor()">Buy</button>
+    <button type="submit">Sell</button>
+    </div>
+    <div style="display: flex; flex-direction: row; padding-top: 25px; gap: 10px;">
+    <input checked type="radio" name="preventSameSelection" id="times1Btn">1x
+    <input type="radio" name="preventSameSelection" id="times10Btn">10x
+    <input type="radio" name="preventSameSelection" id="times100Btn" style="padding-bottom: 10px;">100x
+    </div>
+</div>
+
+
+
+</section>
+    <!-- NEED A SERVER (expressJS) -->
+    <script src="buildingScript.js"></script>
+</body>
+</html>
